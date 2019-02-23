@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+body {
+	text-align: center;
+	background: url('../images/background.png') center/cover no-repeat fixed;
+}
+
+.congrats {
+	display: none;
+	margin-top: 120px;
+	text-shadow: 1px 1px blueviolet;
+}
+
+.layout,
+.modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.layout {
+	z-index: 1;
+	background-image: radial-gradient(circle, rgba(245, 243, 242, 0.4), rgba(36, 38, 39, 0.7));
+}
+
+.modal {
+	z-index: 5;
+	display: none;
+	background: radial-gradient(circle, rgba(97, 144, 145, 0.98), rgba(96, 143, 145, 0.4));
+	color: whitesmoke;
+	font: 500 35px 'Righteous', Courier, monospace;
+}
+
+.container {
+	position: relative;
+	z-index: 2;
+	height: 100%;
+	font-family: 'Righteous', Courier, monospace;
+}
+
+.title {
+	font: 500 35px 'Righteous', Courier, monospace;
+}
+
+.header-msg {
+	color: whitesmoke;
+	text-shadow: 1px 1px blueviolet;
+}
+
+.nav {
+	transform: translateY(635px);
+	margin-left: 260px;
+}
+
+.nav-foot {
+	list-style: none;
+	display: inline;
+	margin: 0 5px;
+	text-transform: uppercase;
+	font: 300 15px;
+}
+
+.restart,
+.start-over {
+	font: inherit;
+	text-transform: inherit;
+	background: none;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.restart:focus {
+	outline: 0;
+}
+
+.loosing {
+	transform: translateY(160%);
+	text-shadow: 2px 2px green;
+}
+
+.start-over {
+	color: red;
+	border: 1px solid blueviolet;
+	text-shadow: 1px 1px whitesmoke;
+}
